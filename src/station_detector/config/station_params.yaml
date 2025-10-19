@@ -1,0 +1,50 @@
+station_pose_estimator_node:
+  ros__parameters:
+    use_auto_calibration: true
+    manual_camera_matrix:
+    - 1714.3978540609123
+    - 0.0
+    - 635.2911614105518
+    - 0.0
+    - 1717.1272766632876
+    - 493.103083021999
+    - 0.0
+    - 0.0
+    - 1.0
+    manual_distortion_coeffs:
+    - -0.08877600699660365
+    - 0.407448111469425
+    - -0.0004446230258463023
+    - -0.0018011998597204008
+    - 0.0
+    outer_size: 0.288
+    inner_size: 0.24
+    min_contour_area: 30.0
+    max_contour_area: 10000.0
+    publish_tf: true
+    max_reprojection_error: 3.0
+    corner_filter_gain: 0.2
+    debug: true
+    show_binary_window: true
+    color_detection:  #HSV, Hue色调0-180 Saturation饱和度0-255 Value明度0-255
+      red_lower_h: 0   #红色
+      red_lower_s: 120
+      red_lower_v: 70
+      red_upper_h: 20  #橙红色
+      red_upper_s: 255
+      red_upper_v: 255
+      red_upper_lower_h: 160 #紫红色
+      red_upper_lower_s: 120
+      red_upper_lower_v: 70
+      red_upper_upper_h: 180  #红色
+      red_upper_upper_s: 255
+      red_upper_upper_v: 255
+      blue_lower_h: 100  #蓝色
+      blue_lower_s: 100 
+      blue_lower_v: 70
+      blue_upper_h: 140
+      blue_upper_s: 255
+      blue_upper_v: 255
+      morphology_kernel_size: 3  #卷积核大小
+      use_adaptive_kernel: False   #自动设置卷积核大小
+
